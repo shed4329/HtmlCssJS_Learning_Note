@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--用css的方法为表格添加边框-->
+    <style type="text/css">
+        table,tr,td,th{border: 1px solid silver;}
+    </style>
+</head>
+<body>
+    <!--表格 table,行tr，单元格td,标题caption，只能有一个，th表头，放在第一个th标签-->
+    <table>
+        <caption>web技术</caption>
+            <thead>
+            <tr>
+                <th>表头1</th>
+                <th>表头2</th>
+            </tr>
+        </thead>
+        <!--thead等 一是为了语义化，而是为了方便css控制-->
+        <tbody>
+            <tr>
+                <!--rowspan纵向合并单元格-->
+                <td rowspan="2">HTML</td>
+                <td>CSS</td>
+             </tr>
+            <tr>
+                
+                <td>JavaScript</td>
+                <td>jQuery</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!--colspan横向合并单元格,column span-->
+                <td colspan="2">统计数据1</td>
+                <td>统计数据2</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
