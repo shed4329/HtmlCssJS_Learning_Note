@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--js代码-->
+    <script>
+        window.onload = function(){
+            var oBtn = document.getElementsByTagName("input");
+            oBtn[8].onclick = function(){
+                alert("I LOVE HTML");
+            }
+        }
+    </script>
+</head>
+<body>
+    <!--表单，是文本框，按钮，单选框，复选框等的统称，form标签-->
+    <!--表单属性，name，起名，method，指定用哪种http提交方式，有get和post（安全性比较好），action指定提交到哪个位置处理，eg: action="index.php",target:打开方式，与a一样，enctype：编码方式，用的比较少-->
+    <!--大部分都是用input实现的表单，type指定表单类型-->
+    <!--单行文本框-->
+    <form method="post">
+        <!--文本框属性：
+        value：文本框默认显示的文字
+        size：长度
+        maxlength:文本框罪对可输入的字符数,中文也是一个字符
+        -->
+        <!--title:悬浮上去显示的文字，提示用的-->
+        姓名：<input title="标题"  type="text" value="野兽先辈" size="20" maxlength="8"/><br/>
+        <!--密码文本框属性和单行文本框一样-->
+        密码：<input title="密码" type="password"/><br/>
+        <!--单选框，name 组名，value，值,默认不选中任何一个-->
+        性别
+        <!--checked默认选中,checked="checked"可以简写为checked,html5中引用的简写-->
+        <!--不是同一name或者name未设置就可以多选了-->
+        <input title="男性" type="radio" name="gender" value="男" checked="checked"/>男
+        <input title="女性" type="radio" name="gender" value="女"/>女<br/>
+        <!--复选框，checked也适用-->
+        水果
+        <input type="checkbox" title="一种水果" name="fruit" value="苹果" checked/>苹果
+        <input type="checkbox" title="一种水果" name="fruit" value="香蕉"/>香蕉
+        <input type="checkbox" title="一种水果" name="fruit" value="西瓜"/>西瓜
+        <input type="checkbox" title="一种水果" name="fruit" value="火龙果"/>火龙果<br/>
+        <!--普通按钮,一般都是结合JavaScript操作,js在上面,value是按钮上的文本-->
+        <input type="button" value="按钮">
+        <!--提交按钮，一般是给服务器提交数据-->
+        <input type="submit" value="按钮">
+        <!--重置按钮，恢复到默认值，只能重置form标签内部的表单-->
+        <input type="reset" value="按钮">
+        <!--按钮还可以用button标签,可以用type设置属性，button,submit,menu,reset四个,但选menu的话，vscode会提出错误，button类型应该是其他三个-->
+        <button type="button">我是按钮</button><br/>
+        <!--文件上传，会打开explorer-->
+        <input type="file" title="upload your files"/><br/>
+        <!--多行文本框,row行数，cols列数，value设置值，默认值是在标签内部设置，row之类好像不是限制行数，列数，而是定义大小，文本框可以拖动改变大小,value似乎不知道干什么用的，js用？-->
+        个人简介：<br/>
+            <textarea rows="5" cols="20" title="是吧？">请介绍你自己</textarea><br/>
+        <!--下拉列表,multible,下拉菜单是否可以选择多项，size，下拉标签显示几个列表项-->
+        <select title="选一个吧" multiple size="4"><!--multible="multible"可以简写为multible-->
+            <option selected>HTML</option><!--selected="selected"可以简写为selected-->
+            <option>CSS</option>
+            <option selected>JavaScript</option><!--不启用多选只会选中其中一项-->
+            <option>jQuery</option>
+            <option>Vue.js</option>
+        </select>
+        <!--如果必须和服务器交互的表单，就一定要放在form标签内，如果不交互，就不必放在form表单内-->
+    </form>
+</body>
+</html>
