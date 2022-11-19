@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- #用id的方式选中-->
+    <!-- 元素选择器，直接写元素名字-->
+    <!-- .用class选中-->
+    <!--后代选择器，选择夫元素的子元素,father1下的div元素-->
+    <!--群组选择器，对几个选择器进行相同操作,重复的操作，只定义1遍-->
+    <style type="text/css">
+        #content{color:red;}
+        div{color:bisque;}
+        .lv{color:aqua;}
+        #father1 div{color:blueviolet;}
+        h1,h2,h3{color: yellowgreen;}
+    </style>
+    
+</head>
+<body>
+    <!--id属性具有唯一性-->
+    <p id="content">存在即合理</p>
+    <!--class类，为相同元素定义一个类,可以不唯一-->
+    <span class="content">存在即合理</span>
+    <p class="content">存在即合理</p>
+    <div id="father1">html
+        <div>H</div>
+        <div>T</div>
+        <div>M</div>
+        <div>L</div>
+    </div>
+    <div>css
+        <div>C</div>
+        <div>S</div>
+        <div>S</div>
+    </div>
+    <h1>Title</h1>
+    <h2>Title</h2>
+    <h3>Title</h3>
+</body>
+</html>
