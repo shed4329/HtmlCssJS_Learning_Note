@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table,tr,th,td{border:1px solid gray}
+        /*表格标题在下方*/
+        table{caption-side: bottom;border-collapse: separate;border-spacing: 10px;}
+        /*border-collapse separete 单元格分开，有空隙，collapse 无空隙*/
+        /*border-spacing 定义边界大小*/
+    </style>
+</head>
+<body>
+    <table>
+        <caption>表格标题</caption>
+        <!--表头-->
+        <thead>
+            <tr>
+                <th>表头单元格1</th>
+                <th>表头单元格2</th>
+            </tr>
+        </thead>
+        <!--表身-->
+        <tbody>
+            <tr>
+                <td>表行单元格1</td>
+                <td>表行单元格2</td>
+            </tr>
+            <tr>
+                <td>表行单元格3</td>
+                <td>表行单元格4</td>
+            </tr>
+        </tbody>
+        <!--表脚-->
+        <tfoot>
+            <tr>
+                <td>表行单元格5</td>
+                <td>表行单元格6</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
