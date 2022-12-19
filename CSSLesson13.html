@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #first{
+            /*静态定位就是默认定位*/
+            width: 120px;
+            height: 1800px;
+            border: 1px solid gray;
+            line-height: 600px;
+            background-color: #B7F1FF;
+        }
+        #second{
+            width: 60px;
+            height: 60px;
+            border: 1px solid silver;
+            background-color: hotpink;
+            position: fixed;
+            top: 30px;/*离浏览器顶部30px，固定定位位置不会因为滚动条的滚动而改变*/
+            left: 160px;
+        }
+        #son3{
+            position: relative;/*相对于原来默认的位置而言*/
+            top: 20px;
+            left: 40px;
+            background-color:cadetblue;
+        }
+        #son4{
+            background-color: coral;
+            position: absolute;
+            top: 20px;/*相对浏览器顶部而言*/
+            left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="first">无定位的div元素</div>
+    <div id="son3">使用相对布局的div元素</div>
+    <div id="son4">使用绝对布局的div元素</div>
+    <div id="second">固定定位的div元素</div>
+</body>
+</html>
