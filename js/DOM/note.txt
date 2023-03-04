@@ -1,0 +1,26 @@
+document.getElementsByTag()
+//如果有多个，全部返回
+document.getElementsByTag("body")[0];//返回body
+document.getElementsByTag("li").length;
+
+document.getElementsByClassName("list");
+li.list tagName.ClassName
+
+document.getElementById("hello);
+
+document.querySelector();
+document.querySelector("li");
+//返回第一个符合条件的
+ducument.querySelectorAll("li");
+document.querySelectorAll("#hello");
+document.querySelectorAll("#sp-list li.list");
+//id加类名选择
+doucument.querySelectorAll("h1").classList;
+//如果有多个类，会选择多个
+document.querySelectorAll("h1").classList.add(A);
+document.querySelectorAll("h1").classList.remove(A);
+
+document.querySelectorAll("h1").classList.toogle("title");
+//返回true，这个类被添加
+document.querySelectorAll("h1").classList.toogle("title");
+//返回false，这个类被移除

@@ -1,0 +1,15 @@
+内部JavaScript：
+<script>
+    //Your code
+</script>
+
+外部JavaScript：
+<script src="script.js">
+    //Your code
+</script>
+
+内联JavaScript(不推荐)
+<button 
+onclick="createParagraph()">
+Click me
+</button>
